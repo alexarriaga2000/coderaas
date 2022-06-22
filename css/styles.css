@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ /* Códgio BASE para responsive para MOBILIE hasta 400px*/
+
+header{
+    background-color:white;
+    color:black;
+    display: flex;
+    height: 15vh;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 2%;
+    
+}
+
+.logo{
+    width: 140px;
+}
+
+header nav{
+    width: 50%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li{
+    display: inline-block;
+}
+
+.portada{
+    background-image:url(../img/dulces_mexicanos.png);
+    width:100%;
+    height: 85vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.texto_de_portada{
+    color: white;
+    text-align: center;  
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.343);
+    width: 90%;
+  
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+    background-color:beige ;
+}    
+
+.log{
+    width: 100px;
+}
+
+.header nav{
+    width: 35%;
+}  
+.texto_de_portada{
+    color: white;
+    text-align: center;  
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.343);
+    width: 90%;
+} 
+   
+/* Presentación de tres categorias en la página de Home */
+
+.contenedorDeRegiones{
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around
+}
+
+/* Despliegue de las tres categorias de dulces en Home */
+.regiones{
+    border: solid rgba(0, 0, 0, 0.983);
+    margin: 20px;
+    width: 50vw;
+    padding: 20px;
+    align-items: flex-start;
+
+}
+.regiones__titulo{
+    text-align: center;
+}
+
+/* Toma el 100% disponible despues de considerar el padding del item */
+.regiones__imagen{
+    width: 100%;
+    height: 10vh;
+    margin-top: 2px;
+    object-fit: contain;
+
+}
+.regiones__descripcion{
+    text-align:justify;
+}
+.boton{
+    margin-top: 15px;
+    background-color:antiquewhite;
+    color: aliceblue;
+    height: 2rem;
+    width: 8rem;
+    transition: height 2s;
+
+}
+/* Transicion en el boton de conocer mas de categorias */
+.boton:hover{
+    height: 3rem;
+    background-color: red;
+
+}
+/* Transicion en input de CONTACT  */
+input{
+    width: 300px;
+    height: 20px;
+    transition: all 1s;
+}
+input:focus{
+    width: 500px;
+    height: 50px;
+    font-size: 24px;
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    transition: all 1s;
+} 
+textarea:focus{
+    width: 500px;
+    height: 150px;
+    font-size: 24px;
+} 
+
+/* Contenedor para hacer la grilla con la galeria de productos */
+.catalogo{
+    display: grid;
+    grid-template-areas: 
+    "camotes "
+    "macarrones"
+    "alegrias"
+    "morelianas"
+    "ates" 
+    "calabaza"
+    "glorias"
+    "obleas"
+    "palanquetas";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 60vh);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+div#camotes{
+    grid-area: camotes;
+}
+div#macarrones{
+    grid-area: macarrones;
+}
+div#alegrias{
+    grid-area: alegrias;
+}
+div#morelianas{
+    grid-area: morelianas;
+}
+div#ates{
+    grid-area: ates;
+}
+div#calabaza{
+    grid-area: calabaza;
+}
+div#glorias{
+    grid-area: glorias;
+}
+div#obleas{
+    grid-area: obleas;
+}
+div#palanquetas{
+    grid-area: palanquetas;
+}
+
+.producto{ 
+    border: 1px solid rgba(0, 0, 0, 0.483);
+    object-fit: contain;
+
+}
+.producto__imagen{
+    padding-top: 10px;
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+
+}
+
+/* Pagina de Nosotros */
+
+.contenedorDeNosotros{
+    padding: 2px;
+}
+.nosotros{
+    margin: 100%;
+    margin: 20px;
+    display: flex;
+
+}
+.nosotros__titulo{
+    text-align: left;
+    margin: 20px;
+}
+.nosotros__imagen{
+    width:100%;
+    height:50vh;
+    padding: 10px;
+
+}
+
+.nosotros__descripcion{
+    width: 100%;
+
+}
+.forma_de_contacto{
+    margin: 10%;
+    
+}
+.video__cuentos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+footer{
+    background-color:rgba(128, 0, 128, 0.748);
+    height: 60px;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer img{
+    margin-top: 5px;
+    width: 5vw;
+    height: 5vh;
+    padding: 2px;
+
+}
+
+ /* Codigo Condición para responsive para TABLETA 401 a 960px*/
+
+@media only screen and (min-width:401px) and (max-width:960px)
+{
+.logo{
+    width: 150px;
+
+}
+
+.header nav{
+    width: 35%;
+}  
+.texto_de_portada{
+    color: white;
+    text-align: center;  
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.343);
+    width: 90%;
+  
+}
+.portada{
+    height: 100vh;
+    
+}
+.contenedorDeRegiones{
+    flex-wrap: wrap;
+}
+.regiones{
+    width: 40vw;
+    align-items: flex-start;
+
+}
+.regiones__imagen{
+    height: 20vh;
+
+}
+.catalogo{
+    display: grid;
+    grid-template-areas: 
+    "camotes macarrones "
+    "alegrias morelianas"
+    "ates calabaza"
+    "glorias obleas"
+    "palanquetas none";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 60vh);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.producto__imagen{
+    padding-top: 10px;
+    width: 60%;
+    height: 40%;
+    justify-self: center;
+
+}
+
+} 
+
+  /* Códgio condicion para responsive para DESKTOP*/
+
+@media only screen and (min-width:961px)
+{
+.logo{
+    width: 200px;
+}
+
+.header nav{
+    width: 35%;
+}  
+.texto_de_portada{
+    color: white;
+    text-align: center;  
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.343);
+    width: 90%;
+  
+}
+.portada{
+    height: 150vh;
+    
+}
+.contenedorDeRegiones{
+    flex-wrap: nowrap;
+}
+.regiones{
+    width: 30vw;
+    align-items: flex-start;
+
+}
+.regiones__imagen{
+    height: 30vh;
+
+}
+.catalogo{
+    display: grid;
+    grid-template-areas: 
+    "camotes macarrones alegrias"
+    "morelianas ates calabaza"
+    "glorias obleas palanquetas";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,60vh);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.nosotros__imagen{
+    width:100%;
+    height:100%;
+    padding: 10px;
+}
+} 

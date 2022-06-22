@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Rehilete Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logotipo_rehilete.gif" width=150 alt="logotipo de rehilete">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./cuentos.html">Cuentos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h2>Formulario de CONTACTO</h3>
+    
+    <section >
+    <p>Agradecemos su mensaje y con gusto lo atenderemos lo más pronto posible</p>
+
+    <form class="forma_de_contacto">
+        <div>
+            <label for="nombre_apellido">Nombre y apellido:</label>
+        </div>
+        <div>
+            <input type="text" id="nombre_apellido" required>
+        </div>
+
+        <div>
+            <label for="correo_electronico">Corre electónico:</label>
+        </div>
+        <div>
+            <input type="email" id="correo_electronico" placeholder="ejemplo@dominio.com" required>
+        </div>
+
+        <div>
+        <label for="telefono">Teléfono:</label>
+        </div>
+        <div>
+        <input type="tel" id="telefono" required>
+        </div>
+        
+        <div>
+            <label for="mensaje">Deje su mensaje:</label>
+        <div>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="region">De que región desea sus dulces:</label>
+            <select name="" id="region">
+            <option value="Puebla">Puebla</option>
+            <option value="Nuevo León">Nuevo León<nav></nav></option>
+            <option value="Michoacán">Michoacán </option>
+            </select>
+        </div>
+
+        <input class="item__boton" type="button" value="Enviar">
+        <input class="item__boton" type="reset" value="Borrar Formulario">
+  
+    </form>
+</section>
+<footer>
+    <ul>
+        <li><a href="https://www.facebook.com/"><img src="../img/facebook.svg" alt="Facebook"></a>
+        </li>
+        <li><a href="https://www.instagram.com/"><img src="../img/instagram.svg" alt="Instagram"></a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
