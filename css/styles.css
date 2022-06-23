@@ -50,7 +50,7 @@ header nav ul li{
     color: white;
     text-align: center;  
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.343);
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.878), rgba(255, 192, 203, 0.747));
     width: 90%;
   
 }
@@ -74,7 +74,19 @@ h2{
     font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.343);
     width: 90%;
+    /* Animación del texto de la portada */
+    animation-duration: 2s;
+    animation-name: efecto;
+    animation-iteration-count:infinite;
 } 
+@keyframes efecto{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacy: 1
+    }
+}
    
 /* Presentación de tres categorias en la página de Home */
 
@@ -104,6 +116,7 @@ h2{
     height: 10vh;
     margin-top: 2px;
     object-fit: contain;
+    transform:skew(10deg)
 
 }
 .regiones__descripcion{
@@ -207,15 +220,15 @@ div#palanquetas{
 
 }
 
-/* Pagina de Nosotros */
+/* Pagina de Nosotros from MOBILE*/
 
 .contenedorDeNosotros{
     padding: 2px;
 }
 .nosotros{
-    margin: 100%;
     margin: 20px;
     display: flex;
+    justify-content: center;
 
 }
 .nosotros__titulo{
@@ -223,10 +236,8 @@ div#palanquetas{
     margin: 20px;
 }
 .nosotros__imagen{
-    width:100%;
-    height:50vh;
+    width: 50%;
     padding: 10px;
-
 }
 
 .nosotros__descripcion{
@@ -365,10 +376,5 @@ footer img{
     grid-template-rows: repeat(3,60vh);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-}
-.nosotros__imagen{
-    width:100%;
-    height:100%;
-    padding: 10px;
 }
 } 
