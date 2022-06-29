@@ -79,6 +79,7 @@ h2{
     animation-name: efecto;
     animation-iteration-count:infinite;
 } 
+/* Animación en el texto de la portada */
 @keyframes efecto{
     0%{
         opacity: 0;
