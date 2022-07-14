@@ -1,0 +1,23 @@
+/*Mobile first*/
+
+.fotodeproducto{
+    box-shadow: 2px 2px 2px 2px black;
+    &:hover{
+        transform: scale(1.2);
+        overflow:visible;
+    }
+}
+
+.textos{
+        font-size: 1rem;
+        font-family: 'Gulzar', serif;
+        color:$colordetextodeparrafo;
+
+    &::first-letter{
+        font-size: 3rem;
+        float:left;
+        font-family: 'Gulzar', serif;
+        color:$colordeprimeraletra;
+
+    }
+}
