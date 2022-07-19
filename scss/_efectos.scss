@@ -2,9 +2,12 @@
 
 .fotodeproducto{
     box-shadow: 2px 2px 2px 2px black;
+    margin-left: 5px;
+    margin-right: 5px;
     &:hover{
-        transform: scale(1.2);
-        overflow:visible;
+        transition: 20ms;
+        overflow: hidden;
+    
     }
 }
 

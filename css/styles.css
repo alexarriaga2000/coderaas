@@ -1,6 +1,8 @@
 /*Colores de fondos*/ /*Mobile first*/
 .fotodeproducto {
   box-shadow: 2px 2px 2px 2px black;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .fotodeproducto:hover {
   transform: scale(1.2);
