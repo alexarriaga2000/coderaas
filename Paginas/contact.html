@@ -11,24 +11,8 @@
 <body>
 
 <!-- INICIA Barra de datos de contacto -->
-<div class="container-fluid bg-primary text-white">
-  <!-- <div class="row" style="height:50px"> -->
-    <div style="background: background= #0d62fe; position:absolute; height:20vh; width:100%; top:-20vh;">
-    </div>
-    <div class="alert-top d-none d-sm-block" style="padding:.5rem 0; background:#0D62FE; border-radius:0;">
-      <div class="container-fluid  text-center" style="display: flex; flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;">
-        <div><span class=" text-white font-weight-light" style="padding-top:10px; display:block; padding: 0 0 0 4px;  ">Dulces Mexicanos <span class="font-weight-bold">los más alegres del mundo</span> todos con ingredientes naturales</span></div>
-        <div>
-        <a href="productos.html" id="rebrand-button" class="read-more d-inline-flex text-white" style=" padding-left:10px; ">Conoce Nuestros productos
-        </a>
-        </div>
-        </div>
-    </div>
-  </div> 
+<div class="container-fluid bg-primary py-2 text-center ">
+  <a class="text-white" href="./paginas/productos.html">Disfruta de un sabor sano y natural, Conoce más ...</a>
 </div>
 
 <!-- TERMINA barra de navegacion de contacto -->
@@ -53,7 +37,7 @@
           <a class="nav-link" href="./nosotros.html">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./noticias.html">Noticias</a>
+          <a class="nav-link" href="./noticias.html">Recetas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="">Contacto</a>
@@ -64,51 +48,43 @@
 </nav>
 
 <main>
-    <h1 class="TituloDeProductos">Forma de Contacto</h1>
-    <div class="container border border-dark mt-5 mb-5 w-50">
+  <h1 class="bg-info mx-auto text-center py-3">Forma de contacto</h1>
+    <div class="container border border-dark mt-5 mb-5">
     <form class="row g-3">
-        <div class="col-8">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
             <label for="inputName" class="form-label">Nombre y Apellido</label>
             <input type="text" class="form-control" id="inputName" placeholder="Nombre y Apellido">
           </div>
-        <div class="col-8">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <label for="inputEmail4" class="form-label">Email</label>
           <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@dominio.com">
         </div>
-        <div class="col-8">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <label for="inputAddress" class="form-label">Calle y Numero</label>
           <input type="text" class="form-control" id="inputAddress" placeholder="Calle y número">
         </div>
-        <div class="col-8">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <label for="inputAddress2" class="form-label">Colonia</label>
           <input type="text" class="form-control" id="inputAddress2" placeholder="Colonia">
         </div>
-        <div class="col-md-6">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <label for="inputCity" class="form-label">Ciudad</label>
           <input type="text" class="form-control" id="inputCity">
         </div>
-        <div class="col-8">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <label for="inputState" class="form-label">Estado</label>
           <select id="inputState" class="form-select">
             <option selected>Elige un Estado...</option>
             <option>Morelia</option>
-            <option>Esatado de México</option>
+            <option>Estado de México</option>
             <option>Puebla</option>
           </select>
         </div>
-        <div class="col-8">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
           <label for="inputZip" class="form-label">Código Postal</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
-        <div class="col-8">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <div class="col-8 mb-4">
+        <div class="col-12 mb-4">
           <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
       </form>

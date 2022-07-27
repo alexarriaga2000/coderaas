@@ -1,13 +1,11 @@
 /*Mobile first*/
 
 .fotodeproducto{
-    box-shadow: 2px 2px 2px 2px black;
-    margin-left: 5px;
-    margin-right: 5px;
+    box-shadow: 2px 2px 2px 2px black;    
+    height: 70vh;
     &:hover{
-        transition: 20ms;
-        overflow: hidden;
-    
+        transition: 2ms;
+        transform: scale(1.05);
     }
 }
 
@@ -21,6 +19,13 @@
         float:left;
         font-family: 'Gulzar', serif;
         color:$colordeprimeraletra;
-
     }
 }
+
+.fotodeNoticia1{
+    background-color: $colordefoto1;
+}
+.bgNoticia1{
+    background-color: $colordereceta1;
+}
+  

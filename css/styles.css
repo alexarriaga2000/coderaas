@@ -1,12 +1,11 @@
 /*Colores de fondos*/ /*Mobile first*/
 .fotodeproducto {
   box-shadow: 2px 2px 2px 2px black;
-  margin-left: 2px;
-  margin-right: 2px;
+  height: 70vh;
 }
 .fotodeproducto:hover {
-  transform: scale(1.2);
-  overflow: visible;
+  transition: 2ms;
+  transform: scale(1.05);
 }
 
 .textos {
@@ -21,8 +20,20 @@
   color: red;
 }
 
+.fotodeNoticia1 {
+  background-color: rgba(154, 242, 170, 0.891);
+}
+
+.bgNoticia1 {
+  background-color: rgb(255, 253, 192);
+}
+
 .bgFooter {
   background-color: pink;
+}
+
+.bgTitulo {
+  background-color: violet;
 }
 
 /*# sourceMappingURL=styles.css.map */
