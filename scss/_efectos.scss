@@ -3,6 +3,7 @@
 .fotodeproducto{
     box-shadow: 2px 2px 2px 2px black;    
     height: 70vh;
+    
     &:hover{
         transition: 2ms;
         transform: scale(1.05);
